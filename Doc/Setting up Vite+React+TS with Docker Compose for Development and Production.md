@@ -24,13 +24,13 @@ If you are trying to follow this guild, I will assume you have the following ins
 npm create vite@latest
 ```
 
-![image-20230427211729927](C:\Users\minyi\Desktop\Docker\Doc\Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427211729927.png)
+![image-20230427211729927](Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427211729927.png)
 
 You don't have to follow my setup, I just prefer to use TypeScript whenever possible.
 
 The following image presents the files in the project created:
 
-![image-20230427212305166](C:\Users\minyi\Desktop\Docker\Doc\Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427212305166.png)
+![image-20230427212305166](Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427212305166.png)
 
 Now, edit `vite.config.ts` as below:
 
@@ -215,7 +215,7 @@ It is important to configure the listen port, root directory and index file if i
 docker compose -f docker-compose.dev.yml up --build
 ```
 
-![image-20230427220800215](C:\Users\minyi\Desktop\Docker\Doc\Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427220800215.png)
+![image-20230427220800215](Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427220800215.png)
 
 Now you should be able to access the development server that is running in the docker image from web browser in you host machine.
 
@@ -225,7 +225,7 @@ If no change is made to docker related files, you don't have to rebuild the imag
 docker compose -f docker-compose.dev.yml up
 ```
 
-![image-20230427221245676](C:\Users\minyi\Desktop\Docker\Doc\Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427221245676.png)
+![image-20230427221245676](Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427221245676.png)
 
 **Note that, if you change the src code in development mode, it will be reflected on the web page.**
 
@@ -237,7 +237,7 @@ docker compose -f docker-compose.dev.yml up
 docker compose up --build
 ```
 
-![image-20230427221743631](C:\Users\minyi\Desktop\Docker\Doc\Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427221743631.png)
+![image-20230427221743631](Setting up Vite+React+TS with Docker Compose for Development and Production.assets\image-20230427221743631.png)
 
 Now you should be able to request the site from localhost:80(port 80 is default hence not revealed on image). 
 
