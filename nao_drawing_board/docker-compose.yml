@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nao_drawing_board:
+    build:
+      context: .
+      target: production
+    ports:
+      - "80:80"
